@@ -1,0 +1,10 @@
+{
+    "opt": {
+        "stop-at": [
+            "COMPONENT_TFLM_CMSIS_NN/include/tensorflow/lite/micro/tools/make/downloads/flatbuffers/include",
+            "COMPONENT_TFLM_CMSIS_NN/include/signal",
+            "COMPONENT_TFLM/include/tensorflow/lite/micro/tools/make/downloads/flatbuffers/include",
+            "COMPONENT_TFLM/include/signal"
+        ]
+    }
+}

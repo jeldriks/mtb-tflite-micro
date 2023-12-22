@@ -1,0 +1,7 @@
+<super-manifest version="2.0">
+  <middleware-manifest-list>
+    <middleware-manifest>
+      <uri>https://github.com/jeldriks/mtb-tflite-micro/raw/main/mtb/manifests/mtb-mw-manifest-supplement-tflm.xml</uri>
+    </middleware-manifest>
+  </middleware-manifest-list>
+</super-manifest>
