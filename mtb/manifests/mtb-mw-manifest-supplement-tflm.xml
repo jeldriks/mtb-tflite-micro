@@ -1,7 +1,7 @@
 <middleware>
     <middleware req_capabilities_v2="[cat1, cat2, cat3]">
-        <name>tflm</name>
-        <id>tflm</id>
+        <name>mtb-tflite-micro</name>
+        <id>mtb-tflite-micro</id>
         <uri>https://github.com/jeldriks/mtb-tflite-micro</uri>
         <desc>This library provides a pre-compiled static library for TensorFlow Lite Micro (TFLM). Compared to the official Infineon library, support for several Cortex-M devices has been added, but no further modifications have been made.</desc>
         <category>Middleware</category>
@@ -9,7 +9,13 @@
         <versions>
             <version flow_version="2.0" tools_min_version="3.0.0">
                 <num>Latest (HEAD)</num>
+                <desc>Latest (HEAD)</desc>
                 <commit>HEAD</commit>
+            </version>
+            <version flow_version="2.0" tools_min_version="3.0.0">
+                <num>2023.12.22 release</num>
+                <desc>2023.12.22 release</desc>
+                <commit>release-2023.12.22</commit>
             </version>
         </versions>
     </middleware>

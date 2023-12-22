@@ -43,7 +43,7 @@ In case you want to update the library or build it for other cores:
 * Make sure you're using Linux or macOS to build the library. Tested with Ubuntu 22.04 and macOS 14.
 * Install required dependencies: A recent version of Make, Python, and ModusToolbox (only needed if the flag ``-m`` is used; see below). [Python packages](https://github.com/tensorflow/tflite-micro/blob/main/third_party/python_requirements.txt) required my TFLM.
 * Navigate to the directory [mtb](./mtb/).
-* For compatibility reasons, the build is fixed to a specific commit of the TFLM repo. To update the library to a newer version/commit, edit the variable ``TFLM_SHA``in the below Bash script.
+* For compatibility reasons, the build is fixed to a specific commit of the TFLM repo. To update the library to a newer version/commit, edit the variable ``TFLM_SHA`` in the below Bash script.
 * Run the Bash script `build.sh` with the following flags:
   * `-a` (string): architecture (find the available architectures in the Bash script). In case no architecture is provided, all available architectures will be built.
   * `-c` (bool): enable CMSIS NN kernels.
