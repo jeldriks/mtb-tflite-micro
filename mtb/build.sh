@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2023 Jeldrik Schröer. All Rights Reserved.
+# Copyright 2023 - 2024 Jeldrik Schröer. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,11 @@
 
 # Note: building under Windows is currently not fully supported by the TFLM project. 
 # Therefore, building using WSL (Windows Subsystem for Linux), Linux or macOS is required.
+
+######################
+# Update this commit for switching to another version of TFLM
+TFLM_SHA="b766947f5a0b8f34dbe1a12b904c99d524b291d3"
+######################
 
 
 # Locate ModusToolbox tools folders in default installation location
@@ -47,16 +52,14 @@ HAS_RUN_ONCE=false
 function tflm_setup {
     cd $ROOT_DIR/mtb/
 
-    # Update this commit for switching to another version of TFLM
-    TFLM_SHA="b766947f5a0b8f34dbe1a12b904c99d524b291d3"
-
     if ! [ -d "tflite-micro" ]; then
         git clone https://github.com/tensorflow/tflite-micro.git
-        cd tflite-micro
-        git checkout $TFLM_SHA
-    else
-        cd tflite-micro
     fi
+
+    cd tflite-micro
+
+    git fetch
+    git checkout $TFLM_SHA
 
     # Download the required third party dependencies
     if ! $HAS_RUN_ONCE; then
