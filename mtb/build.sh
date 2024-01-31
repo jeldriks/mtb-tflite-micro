@@ -24,7 +24,7 @@
 
 ######################
 # Update this commit for switching to another version of TFLM
-TFLM_SHA="b766947f5a0b8f34dbe1a12b904c99d524b291d3"
+TFLM_SHA="9d1dd7b0cac51b8dcd584c43eb032e1ce135a718"
 ######################
 
 
